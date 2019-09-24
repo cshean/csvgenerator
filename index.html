@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+    <title>CSV generator</title>
+    <script type="text/JavaScript" src="./script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1> Random CSV generator </h1>
+      </div>
+      <form action="javascript:generateCSV()">
+        <div class="row">
+          <div class="form-group">
+            <label for="numRows">Number of rows:</label>
+            <input type="number" class="form-control" id="numRows" placeholder="ex: 5" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label for="numCols">Number of columns:</label>
+            <input type="number" class="form-control" id="numCols" placeholder="ex: 10" required>
+          </div>
+        </div>
+        <div class="row">
+          <button type="submit" class="btn btn-primary">Generate!</button>
+        </div>
+      </form>
+    </div>
+    <a href="" id="download" style="display: none;" download="">Download</a>
+  </body>
+</html>
